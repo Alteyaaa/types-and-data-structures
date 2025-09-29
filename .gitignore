@@ -1,0 +1,49 @@
+# Игнорировать все файлы и папки
+/*
+
+# Но не игнорировать эти папки
+!Containers/
+!Sorting/
+
+# Не игнорировать исходные файлы C++
+!*.cpp
+!*.h
+!*.hpp
+
+# Не игнорировать CMakeLists.txt
+!CMakeLists.txt
+
+# Не игнорировать сам .gitignore
+!.gitignore
+
+# Явно игнорировать папку сборки CMake
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+Makefile
+*.a
+*.lib
+*.dll
+*.dylib
+*.so
+
+# Исполняемые файлы
+*.exe
+*.out
+*.app
+
+# Объектные файлы
+*.o
+*.obj
+
+# Файлы IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Прочие временные файлы
+.DS_Store
+Thumbs.db
