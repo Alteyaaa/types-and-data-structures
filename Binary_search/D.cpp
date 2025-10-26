@@ -9,17 +9,28 @@ double root(double a, double b, double c, double d) {
     double l, r, m;
     l = -1001; // чтобы точно покрыть все возможные варианты
     r = 1001;
-    for (int i = 0; i < 30; i ++) {
-        m = (l+r)/2;
-        if (f(l, a, b, c, d)*f(m, a, b, c, d) <= 0) {
-            r = m;
+    if (a > 0) {
+        for (int i = 0; i < 100; i++) {
+            m = (l + r) / 2;
+            if (f(m, a, b, c, d) < 0) {
+                l = m;
+            } else {
+                r = m;
+            }
         }
-        else {
+        return m;
+    }
+    for (int i = 0; i < 100; i++) {
+        m = (l + r) / 2;
+        if (f(m, a, b, c, d) < 0) {
+            r = m;
+        } else {
             l = m;
         }
     }
-    return (l+r)/2;
+    return m;
 }
+
 
 int main() {
     int a, b, c, d;

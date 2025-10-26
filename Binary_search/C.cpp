@@ -11,7 +11,7 @@ double root(double c) {
     double l, r, m, current;
     l = 0;
     r = c;
-    for (int i = 0; i < 1e5; i++) {
+    for (int i = 0; i < 100; i++) {
         m = (l+r)/2;
         current = f(m);
         if (current == c) {
@@ -24,7 +24,7 @@ double root(double c) {
             r = m;
         }
     }
-    return (l+r)/2;
+    return m;
 }
 
 int main() {

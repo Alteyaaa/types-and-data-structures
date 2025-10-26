@@ -17,6 +17,9 @@ int approximate_binary_search(std::vector<int> &sequence, int x) {
     if (l == -1) {
         return sequence[r];
     }
+    if (r == sequence.size()) {
+        return sequence[l];
+    }
     if (abs(sequence[l]-x) <= abs(sequence[r]-x)) {
         return sequence[l];
     }
