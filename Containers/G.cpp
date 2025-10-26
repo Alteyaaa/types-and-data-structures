@@ -18,11 +18,7 @@ int main() {
 
     int current_idx = 1;
     for (int i = 0; i < N; i++) {
-        while (!middle.empty() && middle.top() == current_idx) {
-            exit.push_back(middle.top());
-            middle.pop();
-            current_idx++;
-        }
+
         middle.push(enter[i]);
 
         while (!middle.empty() && middle.top() == current_idx) {
