@@ -5,6 +5,7 @@
 !Containers/
 !Sorting/
 !Binary_search/
+!Heap/
 
 # Не игнорировать исходные файлы C++
 !*.cpp
