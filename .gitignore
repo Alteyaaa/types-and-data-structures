@@ -6,6 +6,7 @@
 !Sorting/
 !Binary_search/
 !Heap/
+!Binary_search_trees/
 
 # Не игнорировать исходные файлы C++
 !*.cpp
