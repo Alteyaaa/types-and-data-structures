@@ -47,9 +47,8 @@ public:
             node->left = insert(node->left, key);
         } else if (key > node->data) {
             node->right = insert(node->right, key);
-        }
-        else {
-            node->clone_count +=1;
+        } else {
+            node->clone_count += 1;
         }
         return node;
     }
@@ -59,7 +58,7 @@ public:
             return;
         }
         order_up(node->left);
-        std::cout << node->data << " " << node-> clone_count << std::endl;
+        std::cout << node->data << " " << node->clone_count << std::endl;
         order_up(node->right);
     }
 };
@@ -70,9 +69,6 @@ int main() {
     BinarySearchTree<int> bst;
     std::cin >> num;
     while (num != 0) {
-        if (bst.search(bst.root, num)) {
-
-        }
         bst.root = bst.insert(bst.root, num);
         std::cin >> num;
     }
