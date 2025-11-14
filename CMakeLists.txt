@@ -54,3 +54,6 @@ add_executable(H_5 Binary_search_trees/H.cpp)
 add_executable(I_5 Binary_search_trees/I.cpp)
 add_executable(J_5 Binary_search_trees/J.cpp)
 add_executable(K_5 Binary_search_trees/K.cpp)
+
+add_executable(A_6 String/A.cpp)
+add_executable(B_6 String/B.cpp)
